@@ -1,0 +1,3 @@
+# Raspberry Pi 上で使う設定ファイルとスクリプトは LF に固定する
+rpi-config/** text eol=lf
+*.sh text eol=lf

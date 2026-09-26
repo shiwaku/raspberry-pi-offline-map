@@ -1,0 +1,3 @@
+# 地図データ（容量が大きいためリポジトリに含めない。入手先は README を参照）
+html/public/*
+!html/public/ReadMe.txt

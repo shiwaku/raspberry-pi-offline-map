@@ -1,0 +1,5 @@
+# 起動時に仮想Wi-Fiインターフェース ap0 を作成する
+# XX:XX:XX:XX:XX:XX は `iw dev` で確認した wlan0 の MAC アドレスに置き換える
+SUBSYSTEM=="ieee80211", ACTION=="add|change", ATTR{macaddress}=="XX:XX:XX:XX:XX:XX", KERNEL=="phy0", \
+  RUN+="/sbin/iw phy phy0 interface add ap0 type __ap", \
+  RUN+="/bin/ip link set ap0 address XX:XX:XX:XX:XX:XX"
